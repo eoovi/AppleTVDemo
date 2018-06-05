@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D764F88C20C6E82E0051B6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F88B20C6E82E0051B6C3 /* AppDelegate.swift */; };
+		D764F88E20C6E82E0051B6C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F88D20C6E82E0051B6C3 /* ViewController.swift */; };
+		D764F89120C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D764F88F20C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld */; };
+		D764F89420C6E82E0051B6C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D764F89220C6E82E0051B6C3 /* Main.storyboard */; };
+		D764F89620C6E82F0051B6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D764F89520C6E82F0051B6C3 /* Assets.xcassets */; };
+		D764F8A120C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8A020C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift */; };
+		D764F8AC20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D764F89D20C6E82F0051B6C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D764F88020C6E82E0051B6C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D764F88720C6E82E0051B6C3;
+			remoteInfo = "Eoovi Demo TV";
+		};
+		D764F8A820C6E82F0051B6C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D764F88020C6E82E0051B6C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D764F88720C6E82E0051B6C3;
+			remoteInfo = "Eoovi Demo TV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D764F88820C6E82E0051B6C3 /* Eoovi Demo TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eoovi Demo TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D764F88B20C6E82E0051B6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D764F88D20C6E82E0051B6C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D764F89020C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eoovi_Demo_TV.xcdatamodel; sourceTree = "<group>"; };
+		D764F89320C6E82E0051B6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D764F89520C6E82F0051B6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D764F89720C6E82F0051B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D764F89C20C6E82F0051B6C3 /* Eoovi Demo TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eoovi Demo TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D764F8A020C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eoovi_Demo_TVTests.swift; sourceTree = "<group>"; };
+		D764F8A220C6E82F0051B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D764F8A720C6E82F0051B6C3 /* Eoovi Demo TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eoovi Demo TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eoovi_Demo_TVUITests.swift; sourceTree = "<group>"; };
+		D764F8AD20C6E82F0051B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D764F88520C6E82E0051B6C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F89920C6E82F0051B6C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F8A420C6E82F0051B6C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D764F87F20C6E82E0051B6C3 = {
+			isa = PBXGroup;
+			children = (
+				D764F88A20C6E82E0051B6C3 /* Eoovi Demo TV */,
+				D764F89F20C6E82F0051B6C3 /* Eoovi Demo TVTests */,
+				D764F8AA20C6E82F0051B6C3 /* Eoovi Demo TVUITests */,
+				D764F88920C6E82E0051B6C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D764F88920C6E82E0051B6C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D764F88820C6E82E0051B6C3 /* Eoovi Demo TV.app */,
+				D764F89C20C6E82F0051B6C3 /* Eoovi Demo TVTests.xctest */,
+				D764F8A720C6E82F0051B6C3 /* Eoovi Demo TVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D764F88A20C6E82E0051B6C3 /* Eoovi Demo TV */ = {
+			isa = PBXGroup;
+			children = (
+				D764F88B20C6E82E0051B6C3 /* AppDelegate.swift */,
+				D764F88D20C6E82E0051B6C3 /* ViewController.swift */,
+				D764F89220C6E82E0051B6C3 /* Main.storyboard */,
+				D764F89520C6E82F0051B6C3 /* Assets.xcassets */,
+				D764F89720C6E82F0051B6C3 /* Info.plist */,
+				D764F88F20C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld */,
+			);
+			path = "Eoovi Demo TV";
+			sourceTree = "<group>";
+		};
+		D764F89F20C6E82F0051B6C3 /* Eoovi Demo TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				D764F8A020C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift */,
+				D764F8A220C6E82F0051B6C3 /* Info.plist */,
+			);
+			path = "Eoovi Demo TVTests";
+			sourceTree = "<group>";
+		};
+		D764F8AA20C6E82F0051B6C3 /* Eoovi Demo TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */,
+				D764F8AD20C6E82F0051B6C3 /* Info.plist */,
+			);
+			path = "Eoovi Demo TVUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D764F88720C6E82E0051B6C3 /* Eoovi Demo TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D764F8B020C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TV" */;
+			buildPhases = (
+				D764F88420C6E82E0051B6C3 /* Sources */,
+				D764F88520C6E82E0051B6C3 /* Frameworks */,
+				D764F88620C6E82E0051B6C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eoovi Demo TV";
+			productName = "Eoovi Demo TV";
+			productReference = D764F88820C6E82E0051B6C3 /* Eoovi Demo TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D764F89B20C6E82F0051B6C3 /* Eoovi Demo TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D764F8B320C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TVTests" */;
+			buildPhases = (
+				D764F89820C6E82F0051B6C3 /* Sources */,
+				D764F89920C6E82F0051B6C3 /* Frameworks */,
+				D764F89A20C6E82F0051B6C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D764F89E20C6E82F0051B6C3 /* PBXTargetDependency */,
+			);
+			name = "Eoovi Demo TVTests";
+			productName = "Eoovi Demo TVTests";
+			productReference = D764F89C20C6E82F0051B6C3 /* Eoovi Demo TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D764F8A620C6E82F0051B6C3 /* Eoovi Demo TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D764F8B620C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TVUITests" */;
+			buildPhases = (
+				D764F8A320C6E82F0051B6C3 /* Sources */,
+				D764F8A420C6E82F0051B6C3 /* Frameworks */,
+				D764F8A520C6E82F0051B6C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D764F8A920C6E82F0051B6C3 /* PBXTargetDependency */,
+			);
+			name = "Eoovi Demo TVUITests";
+			productName = "Eoovi Demo TVUITests";
+			productReference = D764F8A720C6E82F0051B6C3 /* Eoovi Demo TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D764F88020C6E82E0051B6C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Paul Gardiner";
+				TargetAttributes = {
+					D764F88720C6E82E0051B6C3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					D764F89B20C6E82F0051B6C3 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D764F88720C6E82E0051B6C3;
+					};
+					D764F8A620C6E82F0051B6C3 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D764F88720C6E82E0051B6C3;
+					};
+				};
+			};
+			buildConfigurationList = D764F88320C6E82E0051B6C3 /* Build configuration list for PBXProject "Eoovi Demo TV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D764F87F20C6E82E0051B6C3;
+			productRefGroup = D764F88920C6E82E0051B6C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D764F88720C6E82E0051B6C3 /* Eoovi Demo TV */,
+				D764F89B20C6E82F0051B6C3 /* Eoovi Demo TVTests */,
+				D764F8A620C6E82F0051B6C3 /* Eoovi Demo TVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D764F88620C6E82E0051B6C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764F89620C6E82F0051B6C3 /* Assets.xcassets in Resources */,
+				D764F89420C6E82E0051B6C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F89A20C6E82F0051B6C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F8A520C6E82F0051B6C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D764F88420C6E82E0051B6C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764F89120C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld in Sources */,
+				D764F88E20C6E82E0051B6C3 /* ViewController.swift in Sources */,
+				D764F88C20C6E82E0051B6C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F89820C6E82F0051B6C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764F8A120C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D764F8A320C6E82F0051B6C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764F8AC20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D764F89E20C6E82F0051B6C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D764F88720C6E82E0051B6C3 /* Eoovi Demo TV */;
+			targetProxy = D764F89D20C6E82F0051B6C3 /* PBXContainerItemProxy */;
+		};
+		D764F8A920C6E82F0051B6C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D764F88720C6E82E0051B6C3 /* Eoovi Demo TV */;
+			targetProxy = D764F8A820C6E82F0051B6C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D764F89220C6E82E0051B6C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D764F89320C6E82E0051B6C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D764F8AE20C6E82F0051B6C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		D764F8AF20C6E82F0051B6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D764F8B120C6E82F0051B6C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		D764F8B220C6E82F0051B6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		D764F8B420C6E82F0051B6C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eoovi Demo TV.app/Eoovi Demo TV";
+			};
+			name = Debug;
+		};
+		D764F8B520C6E82F0051B6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eoovi Demo TV.app/Eoovi Demo TV";
+			};
+			name = Release;
+		};
+		D764F8B720C6E82F0051B6C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Eoovi Demo TV";
+			};
+			name = Debug;
+		};
+		D764F8B820C6E82F0051B6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				INFOPLIST_FILE = "Eoovi Demo TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eoovi.Eoovi-Demo-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "Eoovi Demo TV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D764F88320C6E82E0051B6C3 /* Build configuration list for PBXProject "Eoovi Demo TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764F8AE20C6E82F0051B6C3 /* Debug */,
+				D764F8AF20C6E82F0051B6C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D764F8B020C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764F8B120C6E82F0051B6C3 /* Debug */,
+				D764F8B220C6E82F0051B6C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D764F8B320C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764F8B420C6E82F0051B6C3 /* Debug */,
+				D764F8B520C6E82F0051B6C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D764F8B620C6E82F0051B6C3 /* Build configuration list for PBXNativeTarget "Eoovi Demo TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764F8B720C6E82F0051B6C3 /* Debug */,
+				D764F8B820C6E82F0051B6C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D764F88F20C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D764F89020C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodel */,
+			);
+			currentVersion = D764F89020C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodel */;
+			path = Eoovi_Demo_TV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D764F88020C6E82E0051B6C3 /* Project object */;
+}
