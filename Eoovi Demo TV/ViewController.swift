@@ -55,7 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         print("GETTING TV ITEMS")
         
 //        let url = URL(string:"http://api.eoovi.com/v/list");
-        let url = URL(string: "http://localhost:8080/v/list");
+        let url = URL(string: "http://api.eoovi.com/v/list");
         
         self.loader.startAnimating()
         self.loadingTextLabel.alpha = 1;
