@@ -54,7 +54,7 @@
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" prefetchingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3m-07-3oF">
                                         <rect key="frame" x="0.0" y="85" width="1920" height="652"/>
-                                        <color key="backgroundColor" red="0.19454660375274463" green="0.4057888388633728" blue="0.22418929631156201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.19454660375274463" green="0.4057888388633728" blue="0.22418929631156201" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="652" id="bCP-73-Ayd"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="652" id="d5s-Cd-oCH"/>

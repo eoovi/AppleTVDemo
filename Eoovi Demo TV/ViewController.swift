@@ -167,7 +167,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let totalCellWidth = Int(self.collectionView.frame.size.width)
         let totalSpacingWidth = (collectionView.numberOfItems(inSection: 0) - 1)
         
-        let leftInset = (collectionView.layer.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2 - 5
+        let leftInset = (collectionView.layer.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2 - 6
         let rightInset = leftInset
         
         return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
