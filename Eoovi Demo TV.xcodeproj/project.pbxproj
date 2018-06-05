@@ -14,6 +14,7 @@
 		D764F89620C6E82F0051B6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D764F89520C6E82F0051B6C3 /* Assets.xcassets */; };
 		D764F8A120C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8A020C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift */; };
 		D764F8AC20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */; };
+		D764F8BA20C6F72E0051B6C3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8B920C6F72E0051B6C3 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D764F8A720C6E82F0051B6C3 /* Eoovi Demo TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eoovi Demo TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eoovi_Demo_TVUITests.swift; sourceTree = "<group>"; };
 		D764F8AD20C6E82F0051B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D764F8B920C6F72E0051B6C3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D764F89520C6E82F0051B6C3 /* Assets.xcassets */,
 				D764F89720C6E82F0051B6C3 /* Info.plist */,
 				D764F88F20C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld */,
+				D764F8B920C6F72E0051B6C3 /* CollectionViewCell.swift */,
 			);
 			path = "Eoovi Demo TV";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				D764F89120C6E82E0051B6C3 /* Eoovi_Demo_TV.xcdatamodeld in Sources */,
 				D764F88E20C6E82E0051B6C3 /* ViewController.swift in Sources */,
+				D764F8BA20C6F72E0051B6C3 /* CollectionViewCell.swift in Sources */,
 				D764F88C20C6E82E0051B6C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
