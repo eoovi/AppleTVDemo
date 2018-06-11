@@ -16,6 +16,8 @@ class CollectionViewCell: UICollectionViewCell {
     
     func setLabel(string: String) {
         self.titleLabel?.text = string
+        self.titleLabel?.alpha = 0;
+        self.activity?.color = UIColor.white
     }
     
     func setImage(url: String) {
@@ -36,11 +38,13 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-//        if(self.isFocused) {
-//            self.imageView?.isHidden = false;
-//        } else {
-//            self.imageView?.isHidden = true;
-//        }
+        
+        if(self.isFocused) {
+            self.titleLabel?.alpha = 1;
+        } else {
+            self.titleLabel?.alpha = 0;
+        }
+        
     }
     
     override func layoutSubviews() {

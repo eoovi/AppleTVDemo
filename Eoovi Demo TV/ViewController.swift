@@ -9,6 +9,7 @@
 import UIKit
 import AVKit
 
+
 struct VideoItemProfile {
     let title: String?
     let description: String?
@@ -38,18 +39,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet var loadingTextLabel: UILabel!
     
     var videoItems: [VideoItem] = [];
-    
-    var loaded = false;
-    
+    var loaded = false
     let pagingScrollView = UIScrollView()
-
+    
+    let playerViewerController = AVPlayerViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.collectionView.isScrollEnabled = false;
         self.getTvItems();
         
     }
+    
     
     func getTvItems() {
         print("GETTING TV ITEMS")
@@ -57,8 +59,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        let url = URL(string:"http://api.eoovi.com/v/list");
         let url = URL(string: "http://api.eoovi.com/v/list");
         
+        self.loader.color = UIColor.white
         self.loader.startAnimating()
-        self.loadingTextLabel.alpha = 1;
         
         let task = URLSession.shared.dataTask(with: url!)  { data, response, error in
             guard error == nil else {
@@ -70,6 +72,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 print("DATA IS EMPTY");
                 return;
             }
+        
             
             self.processJSON(data:data)
         }
@@ -113,33 +116,43 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         self.videoItems = vitem.reversed();
-        self.collectionView.reloadData()
-        self.loadingTextLabel.alpha = 0;
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+            self.loader.stopAnimating()
+            
+            self.collectionView.updateFocusIfNeeded()
+            
+            self.collectionView.frame.size.width = self.view.frame.size.width
+            
+            let width = self.collectionView.frame.width
+            let calc = Float(self.videoItems.count) * Float(width) + Float(width)
+            
+            let pageSize = self.view.frame.size.width - 200  / 3
+            
+            self.collectionView.contentInset = UIEdgeInsetsMake(0, (self.view.frame.size.width-pageSize)/2, 0, (self.view.frame.size.width-pageSize)/2);
+            
+            self.collectionView.contentSize = CGSize(width: Int(calc), height: Int(self.collectionView!.frame.size.height));
+            
+            super.setNeedsFocusUpdate()
+            super.updateFocusIfNeeded()
+        }
         
-        self.collectionView.frame.size.width = self.view.frame.size.width
-        
-        let width = self.collectionView.frame.width
-        let calc = Float(self.videoItems.count) * Float(width) + Float(width)
-        
-        print("DOWNLOADED")
-        print(calc)
-        
-        let pageSize = self.view.frame.size.width - 100
-        
-        self.collectionView.contentInset = UIEdgeInsetsMake(0, (self.view.frame.size.width-pageSize)/2, 0, (self.view.frame.size.width-pageSize)/2);
-        
-        self.collectionView.contentSize = CGSize(width: Int(calc), height: Int(self.collectionView!.frame.size.height));
         
      }
-    
+ 
     // COLLECTION VIEW
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = collectionView.bounds.width
-        let itemHeight = collectionView.bounds.height
-        return CGSize(width: itemWidth, height: itemHeight)
-    }
     
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        
+        if(!self.collectionView.isScrollEnabled) {
+            if(context.nextFocusedView is UICollectionViewCell) {
+                if let cell: UICollectionViewCell = context.nextFocusedView as! CollectionViewCell {
+                    let indexPath: IndexPath = self.collectionView!.indexPath(for: cell) as! IndexPath
+                    self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+                }
+            }
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.videoItems.count
@@ -148,51 +161,39 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
         let item: VideoItem = self.videoItems[indexPath.row] as VideoItem
         
         print("ITEM SELECTED")
         
         let url = URL(string: item.location!.uri!)
         let player = AVPlayer(url:url!)
-        let controller = AVPlayerViewController()
-        controller.player = player;
+        self.playerViewerController.player = player;
         
-        present(controller, animated:true) {
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.playerViewerController.player?.currentItem)
+
+        
+        present(self.playerViewerController, animated:true) {
             player.play();
         }
         
     }
 
+    @objc func playerDidFinishPlaying() {
+       self.playerViewerController.dismiss(animated: true, completion: {})
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let totalCellWidth = Int(self.collectionView.frame.size.width)
+        let totalCellWidth = Int(self.collectionView.frame.size.width / 3)
         let totalSpacingWidth = (collectionView.numberOfItems(inSection: 0) - 1)
         
-        let leftInset = (collectionView.layer.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2 - 6
+        let leftInset = (collectionView.layer.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2 `
         let rightInset = leftInset
         
         return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
 
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-//
-//        let totalCellWidth = 80 * collectionView.numberOfItems(inSection: 0)
-//        let totalSpacingWidth = 10 * (collectionView.numberOfItems(inSection: 0) - 1)
-//
-//        let leftInset = (collectionView.layer.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
-//        let rightInset = leftInset
-//
-//        return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
-//
-//    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 50
-    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 50
-    }
+
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -208,6 +209,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
+        cell.imageView?.image = UIImage(named: "empty");
         
         let item: VideoItem = self.videoItems[indexPath.row] as VideoItem
         cell.setLabel(string: item.profile!.title!)
