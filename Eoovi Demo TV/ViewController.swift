@@ -99,7 +99,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             let locations = item["locations"]! as! [String:Any]
             let hls_index = locations["hls_index"]! as! [String:Any]
-            let location = hls_index["uri"] as! String
+            let location = hls_index["url"] as! String
             let loc = VideoItemLocation(uri: location)
             
             let profile = item["profile"] as! [String:Any]
