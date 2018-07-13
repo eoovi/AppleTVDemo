@@ -15,7 +15,6 @@
 		D764F8A120C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8A020C6E82F0051B6C3 /* Eoovi_Demo_TVTests.swift */; };
 		D764F8AC20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */; };
 		D764F8BA20C6F72E0051B6C3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764F8B920C6F72E0051B6C3 /* CollectionViewCell.swift */; };
-		DABF81FB20CF139900B261D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DABF81FA20CF139900B261D1 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		D764F8AB20C6E82F0051B6C3 /* Eoovi_Demo_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eoovi_Demo_TVUITests.swift; sourceTree = "<group>"; };
 		D764F8AD20C6E82F0051B6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D764F8B920C6F72E0051B6C3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		DABF81FA20CF139900B261D1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 		D764F87F20C6E82E0051B6C3 = {
 			isa = PBXGroup;
 			children = (
-				DABF81FA20CF139900B261D1 /* Podfile */,
 				D764F88A20C6E82E0051B6C3 /* Eoovi Demo TV */,
 				D764F89F20C6E82F0051B6C3 /* Eoovi Demo TVTests */,
 				D764F8AA20C6E82F0051B6C3 /* Eoovi Demo TVUITests */,
@@ -235,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF81FB20CF139900B261D1 /* Podfile in Resources */,
 				D764F89620C6E82F0051B6C3 /* Assets.xcassets in Resources */,
 				D764F89420C6E82E0051B6C3 /* Main.storyboard in Resources */,
 			);
@@ -429,9 +425,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Eoovi Demo TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,8 +435,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eoovi.demo.tv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "02ea29f3-6b5e-4104-ab0c-9790c804b664";
-				PROVISIONING_PROFILE_SPECIFIER = "Tv App Demo 2";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -451,9 +447,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9YKK55Q32Y;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Eoovi Demo TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,8 +457,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eoovi.demo.tv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "02ea29f3-6b5e-4104-ab0c-9790c804b664";
-				PROVISIONING_PROFILE_SPECIFIER = "Tv App Demo 2";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
