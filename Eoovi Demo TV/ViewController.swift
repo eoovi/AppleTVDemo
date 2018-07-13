@@ -57,7 +57,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         print("GETTING TV ITEMS")
         
 //        let url = URL(string:"http://api.eoovi.com/v/list");
-        let url = URL(string: "http://api.eoovi.com/v/list");
+        let url = URL(string: "https://api.eoovi.com/v/list");
+//        let url = URL(string: "http://localhost:8080/v/list");
         
         self.loader.color = UIColor.white
         self.loader.startAnimating()
@@ -87,26 +88,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         var vitem: [VideoItem] = [];
         for item in items {
             let id = item["id"] as! String
-            let thumbs = item["thumbs"] as! [[String:Any]]
+            let thumbs = item["screenshots"] as! [[String:Any]]
             var tarr: [VideoItemThumbnail] = [];
             
             
             for thumb in thumbs {
-                let uri = thumb["uri"]! as! String
+                let uri = thumb["url"]! as! String
                 let thm = VideoItemThumbnail(uri: uri)
                 tarr.append(thm)
             }
             
-            let locations = item["locations"]! as! [String:Any]
-            let hls_index = locations["hls_index"]! as! [String:Any]
-            let location = hls_index["uri"] as! String
-            let loc = VideoItemLocation(uri: location)
+//            let locations = item["locations"]! as! [String:Any]
+//            let hls_index = locations["hls_index"]! as! [String:Any]
+//            let location = hls_index["uri"] as! String
+//            let loc = VideoItemLocation(uri: location)
+            let location = item["hls"]! as! [String:String]
+            let loc = VideoItemLocation(uri: location["watch"])
             
             let profile = item["profile"] as! [String:Any]
             let ptitle = profile["title"] as! String
             let pdesc  = profile["description"]! as! String
             let cover  = profile["meta_cover_image"]! as! String
-            let created = profile["createdAt"] as! String
+            let created = item["added"] as! String
             
             let vprof = VideoItemProfile(title: ptitle, description: pdesc , meta_cover_image: cover, createdAt: created)
             
